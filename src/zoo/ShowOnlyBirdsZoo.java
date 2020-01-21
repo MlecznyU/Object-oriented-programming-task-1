@@ -13,7 +13,7 @@ public class ShowOnlyBirdsZoo extends Zoo {
         for (Animal animal: animals) {
 
             if (animal instanceof Bird)
-                animal.makeNoise();
+                new MakeNoiseOne().makeNoise(animal);
         }
     }
 }
