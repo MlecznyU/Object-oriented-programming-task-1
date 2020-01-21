@@ -4,16 +4,16 @@ import animal.Animal;
 import animal.Bird;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ShowOnlyBirdsZoo extends Zoo {
     @Override
-    public void showAnimals(ArrayList<Animal> animals) {
+    public void showAnimals(List<Animal> animals) {
 
         for (Animal animal: animals) {
 
-            if (animal.toString().equals("bird"))
+            if (animal instanceof Bird)
                 animal.makeNoise();
-
         }
     }
 }

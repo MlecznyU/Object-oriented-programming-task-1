@@ -7,9 +7,8 @@ public abstract class Animal {
         this.weight = weight;
     }
 
-    @Override
-    public String toString() {
-        return "animal";
+    public int getWeight() {
+        return weight;
     }
 
     public abstract void makeNoise();

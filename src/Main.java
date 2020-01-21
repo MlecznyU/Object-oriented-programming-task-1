@@ -18,5 +18,6 @@ public class Main {
         new ShowEachAnimalTwiceZoo().showAnimals(animals);
         System.out.println("\nEach bird 2 times\n");
         new ShowEachBirdTwice().showAnimals(animals);
+
     }
 }

@@ -6,12 +6,8 @@ public class Dog extends Mammal {
     }
 
     @Override
-    public String toString() {
-        return super.toString();
-    }
-
-    @Override
     public void makeNoise() {
         System.out.println("Wof, wof!");
     }
+
 }
