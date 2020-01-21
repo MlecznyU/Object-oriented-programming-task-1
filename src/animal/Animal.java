@@ -10,6 +10,5 @@ public abstract class Animal {
     public int getWeight() {
         return weight;
     }
-
     public abstract void makeNoise();
 }
