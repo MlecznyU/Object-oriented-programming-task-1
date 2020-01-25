@@ -1,7 +1,5 @@
 import animal.*;
-import zoo.ShowEachAnimalTwiceZoo;
-import zoo.ShowEachBirdTwice;
-import zoo.ShowOnlyBirdsZoo;
+import zoo.*;
 
 import java.util.ArrayList;
 

@@ -2,11 +2,10 @@ package zoo;
 
 import animal.Animal;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Zoo {
-    abstract void showAnimals(List<Animal> animals);
+    protected MakeNoise makeNoiseType;
+    protected ISelection iSelectionType;
+    public abstract void showAnimals(List<Animal> animals);
 }
-
-

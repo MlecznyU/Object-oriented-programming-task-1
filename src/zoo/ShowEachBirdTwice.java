@@ -6,12 +6,17 @@ import animal.Bird;
 import java.util.List;
 
 public class ShowEachBirdTwice extends Zoo  {
+    public ShowEachBirdTwice() {
+        makeNoiseType = new MakeNoiseTwo();
+        iSelectionType = new SelectionOnlyBirds();
+    }
+
     @Override
     public void showAnimals(List<Animal> animals) {
+        List<Animal> newAnimals = animals;
+        animals=iSelectionType.selection(newAnimals);
         for (Animal animal: animals) {
-            if (animal instanceof Bird) {
-                new MakeNoiseTwo().makeNoise(animal);
-            }
+                makeNoiseType.makeNoise(animal);
         }
     }
 }
