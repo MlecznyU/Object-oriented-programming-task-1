@@ -2,10 +2,10 @@ package zoo;
 
 import animal.Animal;
 
-public interface MakeNoise {
+public interface IMakeNoise {
     void makeNoise(Animal animal);
 }
-class MakeNoiseOne implements MakeNoise {
+class MakeNoiseOne implements IMakeNoise {
 
     @Override
     public void makeNoise(Animal animal) {
@@ -13,7 +13,7 @@ class MakeNoiseOne implements MakeNoise {
     }
 }
 
-class MakeNoiseTwo implements MakeNoise {
+class MakeNoiseTwo implements IMakeNoise {
     @Override
     public void makeNoise(Animal animal) {
         animal.makeNoise();

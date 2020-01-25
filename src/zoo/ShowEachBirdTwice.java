@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ShowEachBirdTwice extends Zoo  {
     public ShowEachBirdTwice() {
-        makeNoiseType = new MakeNoiseTwo();
+        iMakeNoiseType = new MakeNoiseTwo();
         iSelectionType = new SelectionOnlyBirds();
     }
 
@@ -16,7 +16,7 @@ public class ShowEachBirdTwice extends Zoo  {
         List<Animal> newAnimals = animals;
         animals=iSelectionType.selection(newAnimals);
         for (Animal animal: animals) {
-                makeNoiseType.makeNoise(animal);
+                iMakeNoiseType.makeNoise(animal);
         }
     }
 }

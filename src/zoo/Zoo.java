@@ -5,7 +5,7 @@ import animal.Animal;
 import java.util.List;
 
 public abstract class Zoo {
-    protected MakeNoise makeNoiseType;
+    protected IMakeNoise iMakeNoiseType;
     protected ISelection iSelectionType;
     public abstract void showAnimals(List<Animal> animals);
 }
